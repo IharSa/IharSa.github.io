@@ -1,0 +1,136 @@
+.contact {
+    background-color: $color-background;
+    padding: 62px 0 64px;
+    @include media-laptop {
+        text-align: center;
+    }
+}
+
+.contact-us__content {
+    max-width: 520px;
+     @include media-tablet {
+    max-width: 100%;
+    margin-bottom: 36px;
+}
+}
+
+.contact-title {
+    margin: 0 0;
+}
+
+.contact-us-container {
+    @include media-laptop {
+        flex-direction: column;
+    }
+}
+
+.contact-us__form {
+    padding-top: 16px;
+   input, textarea {
+    border: 1px solid $color-light;
+    background-color: $color-light;
+    padding:  10px 21px;
+    border-radius: 5px;
+    &:focus {
+        border: 1px solid $color-primary;
+        outline: none;
+    }
+   }
+}
+
+textarea {
+    resize: none;
+    min-width: 90%;
+    margin-bottom: 20px;
+   }
+
+.contact-us__liner {
+    display: flex;
+    flex-wrap: wrap;
+    @include media-mobile {
+        justify-content: center;
+            margin-bottom: 0px;
+        >* {
+            margin-bottom: 19px;
+        }
+    }
+}
+
+
+.contact_text {
+    @extend %font-add;
+}
+
+.contact-us__button {
+    >* {min-width: 50px;
+        text-align: center;
+     @include media-mobile {
+         margin-top: 24px;
+     }
+    }
+}
+
+.contact-form:first-child {
+    margin-right: 16px;
+    @include media-mobile {
+        margin-right: 0;
+    }
+}
+.contact-form {
+    margin-bottom: 18px;
+    min-width: 45px;
+    flex-basis: auto;
+    @include media-mobile {
+        flex-basis: 100%;
+    }
+}
+
+.key {
+    display: flex;
+    cursor: pointer;
+    @extend %transition;
+    :hover {
+        color: $color-additional;
+        text-decoration-line: underline;
+    }
+    @include media-laptop {
+        justify-content: center;
+    }
+
+}
+
+
+.icon_phone {
+    background: url(../../image/Group.svg) no-repeat center;
+    width: 13px;
+    height: 13px;
+
+
+}
+
+.icon_letter {
+    background: url(../../image/Union.svg) no-repeat center;
+    width: 11px;
+    height: 8px;
+}
+
+.icon__block {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: $color-light;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+
+.text {
+    color: $color-heading;
+    text-decoration: none;
+    @include font($size: 2.5rem, $height: 2.6rem, $weight: normal);
+}
+
+.POST {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
